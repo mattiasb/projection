@@ -136,6 +136,14 @@
 
 ;;;###autoload
 (with-eval-after-load 'projection-types
+  (defvar projection-project-type-django)
+  (defvar projection-project-type-python-pip)
+  (defvar projection-project-type-python-pkg)
+  (defvar projection-project-type-python-toml)
+  (defvar projection-project-type-python-tox)
+  (defvar projection-project-type-python-pipenv)
+  (defvar projection-project-type-python-poetry)
+
   (projection-type-append-compile-multi-targets
     (list projection-project-type-django
           projection-project-type-python-pip

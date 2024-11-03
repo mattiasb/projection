@@ -110,6 +110,7 @@ the first Makefile it finds in the current directory."
 
 ;;;###autoload
 (with-eval-after-load 'projection-types
+  (defvar projection-project-type-make)
   (projection-type-append-compile-multi-targets projection-project-type-make
     #'projection-multi-make-targets))
 

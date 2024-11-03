@@ -96,6 +96,7 @@ When set the generated targets will be prefixed with PROJECT-TYPE."
 
 ;;;###autoload
 (with-eval-after-load 'projection-types
+  (defvar projection-project-type-python-tox)
   (projection-type-append-compile-multi-targets projection-project-type-python-tox
     #'projection-multi-tox-targets))
 
