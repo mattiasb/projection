@@ -37,6 +37,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-haskell-cabal)
 (defvar projection-project-type-haskell-cabal
   (projection-type
    :name 'haskell-cabal
@@ -52,6 +54,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-dotnet)
 (defvar projection-project-type-dotnet
   (projection-type
    :name 'dotnet
@@ -67,6 +71,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-nim-nimble)
 (defvar projection-project-type-nim-nimble
   (projection-type
    :name 'nim-nimble
@@ -91,6 +97,8 @@
 (autoload 'projection-golang-run-test  "projection-type-golang")
 (autoload 'projection-golang-list-artifacts "projection-type-golang")
 
+;;;###autoload
+(defvar projection-project-type-golang)
 (defvar projection-project-type-golang
   (projection-type
    :name 'golang
@@ -114,6 +122,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-go-task)
 (defvar projection-project-type-go-task
   (projection-type
    :name 'go-task
@@ -126,6 +136,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-scons)
 (defvar projection-project-type-scons
   (projection-type
    :name 'scons
@@ -143,6 +155,8 @@
 (autoload 'projection-meson-get-test-command      "projection-type-meson")
 (autoload 'projection-meson-get-install-command   "projection-type-meson")
 
+;;;###autoload
+(defvar projection-project-type-meson)
 (defvar projection-project-type-meson
   (projection-type
    :name 'meson
@@ -156,6 +170,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-nix)
 (defvar projection-project-type-nix
   (projection-type
    :name 'nix
@@ -167,6 +183,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-nix-flake)
 (defvar projection-project-type-nix-flake
   (projection-type
    :name 'nix-flake
@@ -179,6 +197,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-bazel)
 (defvar projection-project-type-bazel
   (projection-type
    :name 'bazel
@@ -191,6 +211,8 @@
 
 
 
+;;;###autoload
+(defvar projection-project-type-debian)
 (defvar projection-project-type-debian
   (projection-type
    :name 'debian
@@ -211,6 +233,8 @@ Set TARGET as the TARGET to build when set."
          (list "-j" (number-to-string jobs)))
      ,@(when target (list target)))))
 
+;;;###autoload
+(defvar projection-project-type-make)
 (defvar projection-project-type-make
   (projection-type
    :name 'make
@@ -236,6 +260,8 @@ Set TARGET as the TARGET to build when set."
         "autoconf")
      ("./configure" ,@projection-autotools-configure-options))))
 
+;;;###autoload
+(defvar projection-project-type-autotools)
 (defvar projection-project-type-autotools
   (projection-type
    :name 'autotools
@@ -256,6 +282,8 @@ Set TARGET as the TARGET to build when set."
 (autoload 'projection-cmake-list-artifacts "projection-type-cmake")
 (autoload 'projection-ctest-list-artifacts "projection-type-cmake")
 
+;;;###autoload
+(defvar projection-project-type-cmake)
 (defvar projection-project-type-cmake
   (projection-type
    :name 'cmake
@@ -274,6 +302,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-php-symfony)
 (defvar projection-project-type-php-symfony
   (projection-type
    :name 'php-symfony
@@ -286,6 +316,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-rebar)
 (defvar projection-project-type-rebar
   (projection-type
    :name 'rebar
@@ -298,6 +330,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-elixir)
 (defvar projection-project-type-elixir
   (projection-type
    :name 'elixir
@@ -310,6 +344,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-grunt)
 (defvar projection-project-type-grunt
   (projection-type
    :name 'grunt
@@ -321,6 +357,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-gulp)
 (defvar projection-project-type-gulp
   (projection-type
    :name 'gulp
@@ -332,6 +370,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-yarn)
 (defvar projection-project-type-yarn
   (projection-type
    :name 'yarn
@@ -345,6 +385,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-pnpm)
 (defvar projection-project-type-pnpm
   (projection-type
    :name 'pnpm
@@ -358,6 +400,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-npm)
 (defvar projection-project-type-npm
   (projection-type
    :name 'npm
@@ -370,6 +414,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-angular)
 (defvar projection-project-type-angular
   (projection-type
    :name 'angular
@@ -383,6 +429,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-django)
 (defvar projection-project-type-django
   (projection-type
    :name 'django
@@ -396,6 +444,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-python-pip)
 (defvar projection-project-type-python-pip
   (projection-type
    :name 'python-pip
@@ -413,6 +463,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-python-pkg)
 (defvar projection-project-type-python-pkg
   (projection-type
    :name 'python-pkg
@@ -426,6 +478,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-python-toml)
 (defvar projection-project-type-python-toml
   (projection-type
    :name 'python-toml
@@ -443,6 +497,8 @@ Set TARGET as the TARGET to build when set."
 (defalias 'projection-tox-clear-work-directory
   (projection--create-clear-directory-command ".tox"))
 
+;;;###autoload
+(defvar projection-project-type-python-tox)
 (defvar projection-project-type-python-tox
   (projection-type
    :name 'python-tox
@@ -458,6 +514,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-python-pipenv)
 (defvar projection-project-type-python-pipenv
   (projection-type
    :name 'python-pipenv
@@ -471,6 +529,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-python-poetry)
 (defvar projection-project-type-python-poetry
   (projection-type
    :name 'python-poetry
@@ -484,6 +544,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-maven)
 (defvar projection-project-type-maven
   (projection-type
    :name 'maven
@@ -500,6 +562,8 @@ Set TARGET as the TARGET to build when set."
 (autoload 'projection-gradle-run-build "projection-type-gradle")
 (autoload 'projection-gradle-run-test  "projection-type-gradle")
 
+;;;###autoload
+(defvar projection-project-type-gradle)
 (defvar projection-project-type-gradle
   (projection-type
    :name 'gradle
@@ -514,6 +578,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-grails)
 (defvar projection-project-type-grails
   (projection-type
    :name 'grails
@@ -526,6 +592,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-sbt)
 (defvar projection-project-type-sbt
   (projection-type
    :name 'sbt
@@ -540,6 +608,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-mill)
 (defvar projection-project-type-mill
   (projection-type
    :name 'mill
@@ -554,6 +624,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-lein-test)
 (defvar projection-project-type-lein-test
   (projection-type
    :name 'lein-test
@@ -566,6 +638,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-lein-midje)
 (defvar projection-project-type-lein-midje
   (projection-type
    :name 'lein-midje
@@ -578,6 +652,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-boot-clj)
 (defvar projection-project-type-boot-clj
   (projection-type
    :name 'boot-clj
@@ -590,6 +666,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-clojure-cli)
 (defvar projection-project-type-clojure-cli
   (projection-type
    :name 'clojure-cli
@@ -600,6 +678,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-bloop)
 (defvar projection-project-type-bloop
   (projection-type
    :name 'bloop
@@ -614,6 +694,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-ruby-rspec)
 (defvar projection-project-type-ruby-rspec
   (projection-type
    :name 'ruby-rspec
@@ -628,6 +710,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-ruby-test)
 (defvar projection-project-type-ruby-test
   (projection-type
    :name 'ruby-test
@@ -642,6 +726,8 @@ Set TARGET as the TARGET to build when set."
 
 ;; Rails needs to be registered after npm, otherwise `package.json` makes it `npm`.
 ;; https://github.com/bbatsov/projectile/pull/1191
+;;;###autoload
+(defvar projection-project-type-rails-test)
 (defvar projection-project-type-rails-test
   (projection-type
    :name 'rails-test
@@ -654,6 +740,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-rails-rspec)
 (defvar projection-project-type-rails-rspec
   (projection-type
    :name 'rails-rspec
@@ -668,6 +756,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-crystal-rspec)
 (defvar projection-project-type-crystal-rspec
   (projection-type
    :name 'crystal-rspec
@@ -681,6 +771,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-emacs-cask)
 (defvar projection-project-type-emacs-cask
   (projection-type
    :name 'emacs-cask
@@ -693,6 +785,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-emacs-eask)
 (defvar projection-project-type-emacs-eask
   (projection-type
    :name 'emacs-eask
@@ -705,6 +799,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-emacs-eldev)
 (defvar projection-project-type-emacs-eldev
   (projection-type
    :name 'emacs-eldev
@@ -718,6 +814,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-r)
 (defvar projection-project-type-r
   (projection-type
    :name 'r
@@ -729,6 +827,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-haskell-stack)
 (defvar projection-project-type-haskell-stack
   (projection-type
    :name 'haskell-stack
@@ -741,6 +841,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-rust-cargo)
 (defvar projection-project-type-rust-cargo
   (projection-type
    :name 'rust-cargo
@@ -754,6 +856,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-racket)
 (defvar projection-project-type-racket
   (projection-type
    :name 'racket
@@ -766,6 +870,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-dart)
 (defvar projection-project-type-dart
   (projection-type
    :name 'dart
@@ -779,6 +885,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-elm)
 (defvar projection-project-type-elm
   (projection-type
    :name 'elm
@@ -789,6 +897,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-julia)
 (defvar projection-project-type-julia
   (projection-type
    :name 'julia
@@ -802,6 +912,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-ocaml-dune)
 (defvar projection-project-type-ocaml-dune
   (projection-type
    :name 'ocaml-dune
@@ -813,6 +925,8 @@ Set TARGET as the TARGET to build when set."
 
 
 
+;;;###autoload
+(defvar projection-project-type-vscode-tasks)
 (defvar projection-project-type-vscode-tasks
   (projection-type
    :name 'vscode-tasks
